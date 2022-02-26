@@ -1,0 +1,200 @@
+.mainMenu {
+  display: none;
+}
+
+/* Mobile Nav */
+
+.mobile-nav {
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+}
+
+.navbar-cta {
+  display: none;
+}
+
+
+
+/* Showcase Mobile Styles */
+
+#showcase {
+  height: 100vh;
+}
+
+.showcase-card-container {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.showcase-top {
+  align-items: center;
+  text-align: center;
+}
+
+.showcase-top .btn {
+  align-self: center;
+}
+
+.showcase-card {
+  height: 15vh;
+}
+
+.showcase-card img {
+  margin-bottom: 0.2rem;
+}
+
+.showcase-card h3 {
+  font-size: 0.9rem;
+}
+
+/* Homepage Products Styles */
+
+.homepage-products-container {
+  text-align: center;
+}
+.homepage-products-grid {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.homepage-product-item {
+  height: 20vh;
+}
+
+.homepage-product-item h5 {
+  font-size: 0.8rem;
+}
+
+/* Homepage Banner */
+
+#banner {
+  height: 100%;
+}
+
+.banner-container {
+  flex-direction: column;
+}
+
+.banner-img, 
+.banner-info {
+  width: 100%;
+}
+
+.banner-img {
+  height: 40vh;
+}
+
+.banner-info {
+  transform: translateY(-20%);
+  width: 90%;
+  text-align: center;
+}
+
+/* Homepage Gallary Mobile Styles */
+
+#hp-gallary {
+  padding: 1rem 0;
+}
+
+.hp-gallary-container {
+  flex-direction: column;
+  height: 100%;
+}
+
+.hp-gallary-img,
+.hp-gallary-info {
+  width: 100%;
+}
+
+.hp-gallary-img {
+  height: 40vh;
+}
+
+.hp-gallary-info-content {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  transform: translateY(-20%);
+}
+
+/* Footer Mobile Styles */
+
+.footer-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-container div {
+  margin-bottom: 1rem;
+}
+
+.footer-container h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-container div p,
+.footer-container div a {
+  color: grey;
+}
+
+/* About Page */
+
+#about-header {
+  height: 30vh;
+}
+
+.about-container {
+  width: 90%;
+  margin: auto;
+}
+
+.customers-container h3 {
+  font-size: 1rem;
+}
+
+
+/* Why Recycled? Mobile Styles */
+
+#why-recycle-header {
+  height: 30vh;
+}
+
+.info-section {
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.info-section:last-child {
+  flex-direction: column-reverse;
+}
+
+.info-section .info-section-text {
+  width: 100%;
+  padding-right: 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info-section-1 .info-section-img {
+  width: 100%;
+}
+
+.info-section .info-section-img {
+  padding: 0;
+}
+
+/* Contact Mobile Styles */
+
+#contact-header {
+  height: 30vh;
+}
+
+.contact-form-container {
+  width: 100%;
+}
+
+.contact-social i{
+  font-size: 1.2rem;
+}

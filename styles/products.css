@@ -1,0 +1,158 @@
+.filterDiv {
+  display: none;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+  overflow: hidden;
+}
+
+.show {
+  display: block;
+}
+
+#myBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#myBtnContainer button {
+  padding: 0.5rem 1.2rem;
+  background: var(--white-color);
+  border-radius: 0.5rem;
+  color: var(--black-color);
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+#myBtnContainer .btn:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+#myBtnContainer .btn.active {
+  background-color: var(--green-color);
+  color: white;
+}
+
+.product-selector .current-selection {
+  background: var(--green-color);
+  color: var(--white-color);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-info h3 {
+  margin-bottom: 1rem;
+}
+
+.product-info h4 {
+  margin: 0.5rem 0;
+}
+
+details {
+  margin-top: 1rem;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Product Images */
+
+.fence-posts {
+  height: 40vh;
+  width: 100%;
+  background: url('/assets/img/binbays/Palisade\ fence\ 1.jpg')no-repeat center center/cover
+}
+
+.govawall {
+  height: 40vh;
+  width: 100%;
+  background: url('/assets/img/binbays/Govawall\ 6.jpg')no-repeat center center/cover;
+}
+
+.normandie {
+  height: 40vh;
+  width: 100%;
+  background: url('/assets/img/binbays/Normandie\ -\ Henderson\ Grove\ Stoke\ City\ 4.jpg')no-repeat center center/cover;
+}
+
+.picket {
+  height: 40vh;
+  width: 100%;
+  background: url('/assets/img/binbays/Maintenance\ free\ fence.jpg')no-repeat center center/cover;
+}
+
+.technic {
+  height: 40vh;
+  width: 100%;
+  background: url('/assets/img/binbays/Maintenance\ free\ fence.jpg')no-repeat center center/cover;
+}
+
+.dome-top {
+  height: 40vh;
+  background: url('/assets/img/bollards/dome\ top\ bollard\ orange.jpg')no-repeat center center/cover;
+}
+
+.removeable {
+  height: 40vh;
+  background: url('/assets/img/bollards/Removable\ bollard\ 1\ title.jpg') no-repeat center center/cover;
+}
+
+.square {
+  height: 40vh;
+  background: url('/assets/img/bollards/Square\ bollard\ black\ title.jpg') no-repeat center center/cover;
+}
+
+.agora {
+  height: 40vh;
+  background: url('/assets/img/Planters/agoras.jpg') no-repeat center center/cover;
+}
+.barcelona {
+  height: 40vh;
+  background: url('/assets/img/Planters/Barcelona\ 1.jpg') no-repeat center center/cover;
+}
+.madrid {
+  height: 40vh;
+  background: url('/assets/img/Planters/Madrid.jpg') no-repeat center center/cover;
+}
+.milano {
+  height: 40vh;
+  background: url('/assets/img/Planters/The\ Milano.jpg') no-repeat center center/cover;
+}
+.napoli {
+  height: 40vh;
+  background: url('/assets/img/Planters/Govaplast\ Napoli\ 003.jpg') no-repeat center center/cover;
+}
+.palma {
+  height: 40vh;
+  background: url('/assets/img/Planters/Palma.jpg') no-repeat center center/cover;
+}
+.plaza {
+  height: 40vh;
+  background: url('/assets/img/Planters/Plaza\ planter.JPG') no-repeat center center/cover;
+}
+.rotterdam {
+  height: 40vh;
+  background: url('/assets/img/Planters/Rotterdam.jpg') no-repeat center center/cover;
+}
+.versaille {
+  height: 40vh;
+  background: url('/assets/img/Planters/Versaille\ Brown.jpg') no-repeat center center/cover;
+}

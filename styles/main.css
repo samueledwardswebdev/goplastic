@@ -1,0 +1,588 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Root Styles */
+
+:root {
+  --green-color: #46A144;
+  --white-color: #f4f4f4;
+  --black-color: #333333;
+  --h-letter-spacing: 2px;
+  --p-letter-spacing: 1.5px;
+  --p-line-height: 1.6;
+}
+
+/* General Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utility Styles */
+
+h2 {
+  letter-spacing: var(--h-letter-spacing);
+  font-size: 2rem;
+}
+
+p {
+  line-height: var(--p-line-height);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.btn-primary { 
+  color: var(--white-color);
+  background: var(--green-color);
+}
+
+.btn-white { 
+  color: var(--black-color);
+  background: var(--white-color);
+}
+
+
+/* Navigation Bar Styles */
+
+#navbar {
+  padding: 1rem 0;
+}
+
+.current {
+  color: var(--green-color) !important;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.mainMenu {
+  display: flex;
+}
+
+.mainMenu li a {
+  color: var(--black-color);
+  margin: 0 0.75rem;
+  font-weight: 600;
+}
+
+/* Navbar Dropdowns */
+
+.mainMenu li ul {
+  display: none;
+}
+
+.mainMenu li:hover ul {
+  display: block;
+  position: absolute;
+  background: white;
+  padding: 0.3rem;
+  z-index: 100;
+}
+
+.mainMenu li:hover ul li {
+  margin: 0.5rem 0;
+}
+
+.mainMenu li:hover ul li a:hover {
+  color: var(--green-color);
+}
+
+/* Hamburger Navigation Menu */
+
+.hamburger {
+  position: relative;
+  display: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  z-index: 10000;
+}
+
+.hamburger .bar, .hamburger:before, .hamburger:after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  margin: 6px 0px;
+  background: var(--green-color);
+  display: block;
+  border-radius: 0.5rem;
+}
+
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	z-index: 98;
+	background-color: var(--black-color);
+	transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+	left: 0;
+}
+
+.mobile-nav a {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto 16px;
+	text-align: center;
+  color: #f4f4f4;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+	text-decoration: none;
+  transition: 0.4s;
+}
+
+.mobile-nav a:hover {
+  color: var(--pri-red);
+}
+
+/* Showcase Styles */
+
+#showcase {
+  height: 120vh;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#showcase::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/img/walkways/Swansea\ Boardwalk\ 20.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.showcase-top {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.showcase-top h1 {
+  font-size: 4rem;
+  color: var(--white-color);
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.showcase-top h3 {
+  font-weight: 200;
+  color: var(--white-color);
+  letter-spacing: var(--p-letter-spacing);
+  margin-bottom: 1rem;
+}
+
+.showcase-top .btn {
+  align-self: flex-start;
+}
+
+.showcase-bottom {
+  height: 40vh;
+  width: 100%;
+  background: #45a144ce;
+  display: flex;
+}
+
+.showcase-card-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+
+.showcase-card {
+  height: 30vh;
+  background: vaR(--white-color);
+  transform: translateY(-4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.showcase-card img {
+  width: 20%;
+  margin-bottom: 1rem;
+}
+
+.showcase-card h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Homepage About Section */
+
+#homepage-about {
+  padding: 3rem 0;
+}
+
+.hp-about-container {
+  text-align: center;
+}
+
+.hp-about-container * {
+  margin-bottom: 1rem;
+}
+
+.hp-about-container h2 {
+  letter-spacing: var(--h-letter-spacing);
+  font-size: 2rem;
+}
+
+.hp-about-container p {
+  line-height: var(--p-line-height);
+}
+
+/* Homepage Product Styles */
+
+#homepage-products {
+  padding: 3rem 0;
+}
+
+.homepage-products-container {
+  width: 90%;
+  margin: auto;
+}
+
+.homepage-products-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.homepage-products-grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.homepage-product-item {
+  height: 40vh;
+  position: relative;
+  background: rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.homepage-product-title {
+  height: 10%;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homepage-product-item h5 {
+  letter-spacing: 1.3px;
+  font-size: 1rem;
+  color: var(--black-color);
+  font-weight: 500;
+}
+
+/* Homepage Products Background Images */
+
+.hp-p-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/solar/singlesolar.jpeg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/decking/cherrybank.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/benches/plastic-bench.jpeg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-3::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/equest/Brown\ T&G\ boards.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-4::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/bollards/dome\ top\ bollards\ situ\ title.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-5::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/Planters/Agora\ Planter.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-6::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/binbays/Govawall\ 6.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-7::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/litter/Square\ bin\ Seven\ Kings\ Ilford\ 1.JPG') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-8::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/playground/hpl_play.jpeg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.hp-p-item-9::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('/assets/img/walkways/Swansea\ Point\ 4.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+/* Banner Styles */
+
+#banner {
+  height: 80vh;
+  padding: 3rem 0;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.banner-img {
+  height: 100%;
+  width: 50%;
+  background: url('/assets/img/benches/Canvas\ tables\ &\ benches\ -\ Uni\ of\ West\ Scotland\ London\ Campus\ E14\ 7.jpg')no-repeat center center/cover;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.banner-info {
+  width: 50%;
+  background: var(--green-color);
+  padding: 2rem;
+  transform: translateX(-3rem);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.banner-info h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.banner-info p {
+  line-height: var(--p-line-height);
+  margin-bottom: 0.5rem;
+  color: var(--white-color);
+}
+
+.banner-info .btn {
+  margin-top: 0.5rem;
+}
+
+/* Homepage Gallery */
+
+
+#hp-gallary {
+  padding: 3rem 0;
+}
+
+.hp-gallary-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 70vh;
+}
+
+.hp-gallary-img {
+  width: 60%;
+  background: url('/assets/img/Planters/Agora\ Planter.jpg') no-repeat center center/cover;
+  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.hp-gallary-info {
+  width: 40%;
+}
+
+.hp-gallary-info-content {
+  background: var(--green-color);
+  transform: translateX(4rem);
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  color: var(--pri-wht);
+  padding: 2rem;
+}
+
+.hp-gallary-info-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.hp-gallary-info-content p {
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+/* Footer Styles */
+
+/* Footer Section */
+
+#footer {
+  padding: 3rem 0;
+  background: var(--black-color)
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container div h5 {
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.footer-container div p, 
+.footer-container div a {  
+  margin-bottom: 0.5rem;
+  color: var(--white-color);
+}
+
+

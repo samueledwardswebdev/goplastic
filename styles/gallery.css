@@ -1,0 +1,14 @@
+#gallery {
+  padding: 3rem 0;
+}
+
+#gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.gallery-app-container {
+  width: 90%;
+  margin: auto;
+}

@@ -1,0 +1,36 @@
+.agora {
+  height: 40vh;
+  background: url('/assets/img/Planters/agoras.jpg') no-repeat center center/cover;
+}
+.barcelona {
+  height: 40vh;
+  background: url('/assets/img/Planters/Barcelona\ 1.jpg') no-repeat center center/cover;
+}
+.madrid {
+  height: 40vh;
+  background: url('/assets/img/Planters/Madrid.jpg') no-repeat center center/cover;
+}
+.milano {
+  height: 40vh;
+  background: url('/assets/img/Planters/The\ Milano.jpg') no-repeat center center/cover;
+}
+.napoli {
+  height: 40vh;
+  background: url('/assets/img/Planters/Govaplast\ Napoli\ 003.jpg') no-repeat center center/cover;
+}
+.palma {
+  height: 40vh;
+  background: url('/assets/img/Planters/Palma.jpg') no-repeat center center/cover;
+}
+.plaza {
+  height: 40vh;
+  background: url('/assets/img/Planters/Plaza\ planter.JPG') no-repeat center center/cover;
+}
+.rotterdam {
+  height: 40vh;
+  background: url('/assets/img/Planters/Rotterdam.jpg') no-repeat center center/cover;
+}
+.versaille {
+  height: 40vh;
+  background: url('/assets/img/Planters/Versaille\ Brown.jpg') no-repeat center center/cover;
+}

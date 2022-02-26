@@ -1,0 +1,14 @@
+.dome-top {
+  height: 40vh;
+  background: url('/assets/img/bollards/dome\ top\ bollard\ orange.jpg')no-repeat center center/cover;
+}
+
+.removeable {
+  height: 40vh;
+  background: url('/assets/img/bollards/Removable\ bollard\ 1\ title.jpg') no-repeat center center/cover;
+}
+
+.square {
+  height: 40vh;
+  background: url('/assets/img/bollards/Square\ bollard\ black\ title.jpg') no-repeat center center/cover;
+}
